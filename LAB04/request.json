@@ -1,0 +1,29 @@
+{
+  "requests": [
+    {
+      "image": {
+        "source": {
+          "imageUri": "https://github.com/volinhbao/CS114.K21.KHTN/blob/master/LAB04/street(smaller).jpg?raw=true"
+        }
+      },
+      "features": [
+        {
+          "type": "LABEL_DETECTION",
+          "maxResults": 3
+        },
+        {
+          "type": "OBJECT_LOCALIZATION",
+          "maxResults": 1
+        },
+        {
+          "type": "TEXT_DETECTION",
+          "maxResults": 2,
+          "model": "builtin/latest"
+        },
+        {
+            "type": "LANDMARK_DETECTION"
+        }
+      ]
+    }
+  ]
+}
